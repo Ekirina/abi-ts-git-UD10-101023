@@ -23,11 +23,11 @@ public class adivinaNum {
 				}
 
 			}catch (NumberFormatException e) {
-				JOptionPane.showMessageDialog(null,"Debe de poner un número. El error es el siguiente:\n"+ e);
+				JOptionPane.showMessageDialog(null,"Debe de poner un número entero. El error es el siguiente:\n"+ e);
 				contador++;
 			}
 		}while(num != aleatorio);
-		System.out.println("¡Enhorabuena! Acertaste el número y tus intentos son: "+contador);
+		System.out.println("¡Enhorabuena! Acertaste el número y lo has hecho en "+contador+" intentos.");
 		
 	}	
 }
