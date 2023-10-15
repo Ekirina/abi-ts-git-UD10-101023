@@ -12,9 +12,9 @@ public class parOimpar {
 			System.out.println("Generando número aleatorio...");
 			System.out.println("El número aleatorio es "+num);
 			if(num %2 == 0) {
-				System.out.println("Es par");
+				throw new Exception ("Es par");
 			}else {
-				System.out.println("Es impar");
+				throw new Exception ("Es impar");
 			}
 
 		} catch (Exception e) {
