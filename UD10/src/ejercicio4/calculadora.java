@@ -42,12 +42,12 @@ public class calculadora  {
 				break;
 			case "√2":
 				String v2Num=JOptionPane.showInputDialog("Introduce un número");
-				int numero2 = Integer.parseInt(v2Num);
+				double numero2 = Double.parseDouble(v2Num);
 				raizCuadrada(numero2);
 				break;
 			case "√3":
 				String v3Num=JOptionPane.showInputDialog("Introduce un número");
-				int numero3 = Integer.parseInt(v3Num);
+				double numero3 = Double.parseDouble(v3Num);
 				raizCubica(numero3);
 				break;
 			case "dividir":
@@ -78,12 +78,12 @@ public class calculadora  {
 		System.out.println(por);		
 		return por;
 	}
-	public double raizCuadrada (int num1) {
+	public double raizCuadrada (double num1) {
 		v2 = Math.sqrt(num1);
 		System.out.println(v2);		
 		return v2;
 	}
-	public double raizCubica (int num1) {
+	public double raizCubica (double num1) {
 		v3 = Math.cbrt(num1);
 		System.out.println(v3);		
 		return v3;
